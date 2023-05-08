@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Entry Form</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+    <form name="Employment" action="send.php" method="post">
+        <table width="50%" border="1" cellspacing="2" cellpadding="2">
+            <tr>
+              <td colspan="2" align="center">Employee Application Form</td>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname" maxlength="20" /></td>  
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" maxlength="20" /></td>  
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td>
+                    <select name="Position">
+                        <option value="AC">Accountant</option>
+                        <option value="RE">Receptionist</option>
+                        <option value="AD">Administrator</option>
+                        <option value="SU">Supervisor</option>
+                    </select>
+                </td>  
+            </tr>
+            <tr>
+                <td>Experience:</td>
+                <td>
+                    <select name="Experience">
+                    <option value="TE">10</option>
+                    <option value="EL">11</option>
+                    <option value="TW">12</option>
+                    <option value="TH">13</option>
+                </select>
+            </td>  
+            </tr>
+            <tr>
+                <td>Job Type:</td>
+                <td>
+                    <input type="checkbox" name="ft" />Full-Time
+                    <input type="checkbox" name="pt" />Part-Time
+                    <input type="checkbox" name="ct" />Contract 
+                </td>  
+            </tr>
+            <tr>
+                <td>Employment Status:</td>
+                <td>
+                    <input type="radio" name="es" value="employed" />Employed
+                    <input type="radio" name="es" value="unemployed" />UnEmployed
+                    <input type="radio" name="es" value="student" />Student
+                </td>  
+            </tr>
+            <tr>
+                <td>Additional Comments:</td>
+                <td>
+                    <textarea name="comments" cols="45" rows="5"></textarea>
+                </td>  
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submit" value="submit" />
+                    <input type="reset" name="reset" value="reset" />
+                </td>  
+            </tr>
+
+        </table>
+    </form>
+    </body>
+</html>
